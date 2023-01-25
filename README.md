@@ -1,7 +1,7 @@
 ## How to Deploy
 ```bash
-git clone https://github.com/ezynook/airflow.git
 cd /home
+git clone https://github.com/ezynook/airflow.git
 mkdir -p /home/airflow/dags
 mkdir -p /home/airflow/mysqldata
 mkdir -p /home/airflow/notebooks
