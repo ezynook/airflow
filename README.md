@@ -9,9 +9,9 @@ mkdir -p /home/airflow/notebooks
 ```bash
 docker run --name airflow -itd \
 -p 8080:8080 -p 8888:8888 \
--v /home/airflow/dags:/root/airflow/dags \
--v /home/airflow/mysqldata:/var/lib/mysql \
--v /home/airflow/notebooks:/root/notebooks \
+-v "$PWD"/dags:/root/airflow/dags \
+-v "$PWD"/mysqldata:/var/lib/mysql \
+-v "$PWD"/notebooks:/root/notebooks \
 ezynook/airflow:latest
 ```
 ## How to use
